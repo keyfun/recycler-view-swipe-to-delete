@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void setUpItemTouchHelper() {
 
-        ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT) {
+        ItemTouchHelper.SimpleCallback simpleItemTouchCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
 
             // we want to cache these and not allocate anything repeatedly in the onChildDraw method
             Drawable background;
